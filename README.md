@@ -50,5 +50,5 @@ bash camtrap.sh
 <p><b>Version: 1.4:</b> Ngrok authtoken update</p>
 <p><b>Version: 1.3:</b> Fix ngrok direct link</p>
 
-#### For More Video subcribe <a href="http://youtube.com/Cyberion-ZeroCool">CYBERION YouTube Channel</a>
+#### For More Video subcribe <a href="http://youtube.com/@Cyberion-ZeroCool">CYBERION YouTube Channel</a>
 <p>CamTrap is created to help in penetration testing and it's not responsible for any misuse or illegal purposes.</p>
