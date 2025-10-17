@@ -20,13 +20,14 @@ Grab cam shots from target's phone front camera or PC webcam just sending a link
   <li>MacOS</li>
   <li>Ubuntu</li>
   <li>Parrot Sec OS</li>
+  <li>Windows (WSL)</li>
 </ul>
 
 # Installing and requirements
-<p>This tool require PHP for webserver, SSH or serveo link. First run following command on your terminal</p>
+<p>This tool require PHP for webserver, and wget for downloading dependencies. First run following command on your terminal</p>
 
 ```
-apt-get -y install php openssh git wget
+apt-get -y install php wget unzip
 ```
 
 ## Installing (Kali Linux/Termux):
@@ -37,9 +38,40 @@ cd CamTrap
 bash camtrap.sh
 ```
 
+## Clean logs & unnecessary files :
+
+```
+bash cleanup.sh
+```
+<p>The cam files and saved location will also be removed.</p>
+
 ## Change Log:
 
-<p><b>Version: 1.8:</b> Fix and add support</p>
+<p><b>Version: 2.0:</b> Added GPS Location Tracking</p>
+<ul>
+  <li>Added: GPS location capturing functionality</li>
+  <li>Added: Google Maps integration for captured locations</li>
+  <li>Added: Location accuracy reporting</li>
+  <li>Added: Improved loading screen with location request</li>
+</ul>
+
+<p><b>Version: 1.9:</b> Enhanced architecture detection</p>
+<ul>
+  <li>Added: Improved architecture detection for all CPU types</li>
+  <li>Added: Better support for Apple Silicon (M1/M2/M3) Macs</li>
+  <li>Added: Automatic detection of ARM, ARM64, x86, and x86_64 architectures</li>
+  <li>Fixed: Windows compatibility improvements</li>
+  <li>Fixed: CloudFlare Tunnel download issues</li>
+</ul>
+
+<p><b>Version: 1.8:</b> Added CloudFlare Tunnel and removed Serveo</p>
+<ul>
+  <li>Added: CloudFlare Tunnel support for more reliable connections</li>
+  <li>Removed: Serveo tunnel (deprecated)</li>
+  <li>Fixed: Various code improvements and bug fixes</li>
+</ul>
+
+<p><b>Version: 1.7:</b> Fix and add support</p>
 <ul>
   <li>fixed: termux failed to get home directory</li>
   <li>Add support for Apple sillicon (M1/M2/M3 ARM64)</li>
@@ -49,6 +81,8 @@ bash camtrap.sh
 <p><b>Version: 1.5:</b> Add new online meeting template</p>
 <p><b>Version: 1.4:</b> Ngrok authtoken update</p>
 <p><b>Version: 1.3:</b> Fix ngrok direct link</p>
-
+#### For More Video subcribe <a href="http://youtube.com/Cyberion-ZeroCool">CYBERION YouTube Channel</a>
+<p>CamTrap is created to help in penetration testing and it's not responsible for any misuse or illegal purposes.</p>
+<p><b>Special thanks to Mian Izaz Ali Shah</b> — for being the guiding light on my coding journey. Your support, mentorship, and passion for web development have truly inspired me to push my limits and keep learning. This project wouldn’t be the same without your help!</p>
 #### For More Video subcribe <a href="http://youtube.com/@Cyberion-ZeroCool">CYBERION YouTube Channel</a>
 <p>CamTrap is created to help in penetration testing and it's not responsible for any misuse or illegal purposes.</p>
